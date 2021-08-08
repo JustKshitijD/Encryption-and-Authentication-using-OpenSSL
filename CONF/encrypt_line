@@ -1,0 +1,1 @@
+openssl enc -aes-256-cbc -in plaintext -K 12778149849270413553445795841632 -iv 9217468408870403 -out session_key_encrypted_message

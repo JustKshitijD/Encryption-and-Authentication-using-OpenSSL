@@ -1,0 +1,211 @@
+RSA encryption: https://www.cs.umd.edu/class/spring2019/cmsc414/projects/p3.pdf
+
+We will assume that for a given set of users, the corresponding public/private key pair is locally
+available
+We will assume that only CBC mode is used.
+
+CONF only: The email message is encrypted with a randomly generated secret message key (or session key)
+using a symmetric block cipher algorithm. The message key is encrypted using the receiver’s public key
+and pre-pended to the message. The [encrypted key, message] is then written into a file that can be sent
+using traditional email.
+
+EncryAlg is one of: des-ede3-cbc, aes-256-cbc
+
+In this example we are using 256 bit AES (i.e. a 256 bit key). The
+     * IV size for *most* modes is the same as the block size. For AES this
+     * is 128 bits
+During initialisation we will provide an EVP_CIPHER object. In this case we are using EVP_aes_256_cbc(), which uses the AES algorithm with a 256-bit key in CBC mode
+
+Compile via: gcc CONF_encrypt.c -lcrypto
+
+
+EKUb is the receiver’s RSA
+public key
+
+EKRa is the sender’s RSA private key
+
+Ks is the session key (and any needed initialization vector, IVs), Kh is the hashing key (of length
+equal to the hashing algorithm’s block size), EKRa is sender’s RSA private key and EKUb is receiver’s RSA
+public key.
+
+Ks is generated randomly and uses symmetric block cipher algo.
+
+The UserNameListFile will contain a set of users, one per line. RSAKeySize is either 1024 or 2048.
+For each user, randomly generate an RSA key pair and store private key and public key in user priv
+keylen.txt and user pub keylen.txt respectively; where keylen is either 1024 or 2048.
+
+
+implement the message
+digest first, then try encryption with secret key, then try encryption with public/private key, etc
+
+You can run ’man evp’, ’man rsa’, ’man pem’ for lots of additional
+information.
+Note: By default, the crypto functions produce binary output. You must choose base64 encoded output
+format
+
+cryptography includes both high level recipes and low level interfaces to common cryptographic algorithms such as symmetric ciphers, message digests, and key derivation functions.
+
+EVP_DigestInit(3), EVP_EncryptInit(3), EVP_OpenInit(3),
+       EVP_SealInit(3), EVP_DigestSignInit(3), EVP_SignInit(3),
+       EVP_EncodeInit(3), EVP_VerifyInit(3), EVP_PKEY_new(3),
+       EVP_PKEY_set1_RSA(3), EVP_PKEY_keygen(3), EVP_PKEY_print_private(3),
+       EVP_PKEY_decrypt(3), EVP_PKEY_encrypt(3), EVP_PKEY_sign(3),
+       EVP_PKEY_verify(3), EVP_PKEY_verify_recover(3), EVP_PKEY_derive(3),
+       EVP_BytesToKey(3), OpenSSL_add_all_algorithms(3), engine(3)
+
+echo 'Hi Alice! Please bring malacpörkölt for dinner!' |
+openssl rsautl -encrypt -pubin -inkey alice.pub >message.encrypted
+
+RSA:
+openssl rsa [-inform PEM|NET|DER] [-outform PEM|NET|DER] [-in filename]
+       [-passin arg] [-out filename] [-passout arg] [-sgckey] [-aes128]
+       [-aes192] [-aes256] [-camellia128] [-camellia192] [-camellia256] [-des]
+       [-des3] [-idea] [-text] [-noout] [-modulus] [-check] [-pubin] [-pubout]
+       [-RSAPublicKey_in] [-RSAPublicKey_out] [-engine id]
+
+
+-in filename
+           This specifies the input filename to read a key from or standard
+           input if this option is not specified. If the key is encrypted a
+           pass phrase will be prompted for.
+
+ -out filename
+           This specifies the output filename to write a key to or standard
+           output if this option is not specified. If any encryption options
+           are set then a pass phrase will be prompted for. The output
+           filename should not be the same as the input filename.
+
+-aes128|-aes192|-aes256|-camellia128|-camellia192|-camellia256|-des|-des3
+|-idea
+   These options encrypt the private key with the specified cipher
+   before outputting it.
+
+To remove the pass phrase on an RSA private key:
+	openssl rsa -in key.pem -out keyout.pem
+
+	To encrypt a private key using triple DES:
+
+	openssl rsa -in key.pem -des3 -out keyout.pem
+
+	To convert a private key from PEM to DER format:
+
+	openssl rsa -in key.pem -outform DER -out keyout.der
+
+	To print out the components of a private key to standard output:
+
+	openssl rsa -in key.pem -text -noout
+
+	To just output the public part of a private key:
+
+	openssl rsa -in key.pem -pubout -out pubkey.pem
+
+	Output the public part of a private key in RSAPublicKey format:
+
+	openssl rsa -in key.pem -RSAPublicKey_out -out pubkey.pem
+
+
+
+rsautl:-
+SYNOPSIS
+       openssl rsautl [-in file] [-out file] [-inkey file] [-pubin] [-certin]
+       [-sign] [-verify] [-encrypt] [-decrypt] [-pkcs] [-ssl] [-raw]
+       [-hexdump] [-asn1parse]
+
+COMMAND OPTIONS
+       -in filename
+           This specifies the input filename to read data from or standard
+           input if this option is not specified.
+
+       -out filename
+           specifies the output filename to write to or standard output by
+           default.
+
+       -inkey file
+           the input key file, by default it should be an RSA private key.
+
+       -pubin
+           the input file is an RSA public key.
+
+       -certin
+           the input is a certificate containing an RSA public key.
+
+       -sign
+           sign the input data and output the signed result. This requires and
+           RSA private key.
+
+       -verify
+           verify the input data and output the recovered data.
+
+       -encrypt
+           encrypt the input data using an RSA public key.
+
+       -decrypt
+           decrypt the input data using an RSA private key.
+
+-pkcs, -oaep, -ssl, -raw
+           the padding to use: PKCS#1 v1.5 (the default), PKCS#1 OAEP, special
+           padding used in SSL v2 backwards compatible handshakes, or no
+           padding, respectively.  For signatures, only -pkcs and -raw can be
+           used.
+
+       -hexdump
+           hex dump the output data.
+
+       -asn1parse
+           asn1parse the output data, this is useful when combined with the
+           -verify option.
+
+NOTES
+       rsautl because it uses the RSA algorithm directly can only be used to
+       sign or verify small pieces of data.
+
+EXAMPLES
+       Sign some data using a private key:
+
+        openssl rsautl -sign -in file -inkey key.pem -out sig
+
+       Recover the signed data
+
+        openssl rsautl -verify -in sig -inkey key.pem
+
+
+
+
+Recall, for example, the SHA256 hash function. For an input bitstring of any length N > 0, this function generates a fixed-length hash value of 256 bits; hence, this hash value does not reveal even the input bitstring’s length N, let alone the value of each bit in the string.
+
+
+STEPS for AUIN:
+1) create "plaintext" using "create_plaintext.c". Plaintext lenth in [10,59].
+2) run "sha512_generate.py" OR "sha3-512_generate.py" to create hash from "plaintext" and store in "hash".
+3) run "create_user_name_list_and_rsa_keys.py" to create users and rsa keys.
+4) Pick any of these users and use their keys. Edit "rsa_encrypt_hash.sh" to change private rsa key of sender.
+Run it to encrypt "hash" to give "rsa_encrypted_hash".
+5) run "merge_enc_hash_and_message.py" to append "rsa_encrypted_hash" and "plaintext", and output "merged_enc_hash_and_message"
+6) Run "create_session_key.c" OR "create_session_key_3_des.c" to create "session_key.txt" and "iv.txt".
+7) Run CONF_encrypt2.py to put a line that encrypts the "merged_enc_hash_and_message" with Ks, into "encrypt_line".
+8) Run "encrypt_line" to create "session_key_encrypted_merged_enc_hash_and_message". Change aes OR des-3 here accordingly.
+9) Pick any of these users and use their keys. Edit "rsa_encrypt_Ks.sh" to change public rsa key of receiver.
+Run it to encrypt "session_key.txt" to give "rsa_encrypted_session_key".
+10) Run final encryption to merge "rsa_encrypted_session_key" and "session_key_encrypted_merged_enc_hash_and_message" and "plaintext" and output in "final_enc"
+
+11) Run "break_final_enc_for_decryption.py" to break final_enc into "rsa_encrypted_session_key_RECV" and "session_key_encrypted_merged_enc_hash_and_message_RECV" files
+12) Run "rsa_decrypt_Ks.sh" to get back "session_key_RECV.txt"
+13) Run "CONF_decrypt2.py", to put into "decrypt_line", the command to decrypt "session_key_encrypted_merged_enc_hash_and_message_RECV" into "merged_enc_hash_and_message_RECV".
+14) run "decrypt_line"
+15) run "break_enc_hash_and_message" to create "rsa_encrypted_hash_RECV" and "plaintext_RECV"
+16) Run "create_hash_from_received_plaintext.py" to convert "plaintext_RECV" to proper "hash_RECV" using sender's public key
+(If sha3-512 (OR) is used, then edit a line here to say that we are using sha3-512. Also check that in "bash_encrypt_2.sh", proper "python sha3-512_generate.py" is used).
+
+17) Run "rsa_decrypt_hash.sh" to get "hash_from_rsa" from "rsa_encrypted_hash_RECV" using public key of sender.
+18) Run "final_compare.py", which reads  from "hash_RECV" and "hash_from_rsa" and declares success if both are equal
+
+
+
+
+7) Run "create_hash_from_received_plaintext.py" to convert "plaintext_RECV" to proper "hash_RECV"
+(If sha3-512 is used, then edit a line here to say that we are using sha3-512. Also check that in "bash_encrypt_2.sh", proper "python sha3-512_generate.py" is used).
+
+8) Run "rsa_decrypt_hash.sh" to get "hash_from_rsa" from "rsa_encrypted_hash_RECV"
+9) Run "final_compare.py", which reads  from "hash_RECV" and "hash_from_rsa" and declares success if both are equal
+
+ Run everything in encrypt using "bash_encrypt_2.sh"

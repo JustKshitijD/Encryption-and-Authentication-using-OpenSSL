@@ -1,0 +1,52 @@
+As lab2.py is python file, there is no make needed.
+1) Do- "pico Usernames.txt" to get list of users. You can modify the number of these users.
+
+2) Do- "python lab2.py CreateKeys Usernames.txt 2048" to create RSA key pairs for all the users. You can make keylen as 1024 too.
+
+3) Do- "ls -l *_priv.txt *_pub.txt" to see all the key files generated.
+
+4) DO- "pico Mail-sample.txt" to see message/plaintext. You can modify this.
+
+5) For CONF, the command for encoding should be- "python lab2.py CreateMail CONF A C Mail-sample.txt Mail-out.txt aes-256-cbc 2048". Do "pico Mail-out.txt" to see the encoded output file. 
+
+Do decoding of this immediately after this, using, "python lab2.py ReadMail CONF A C Mail-sample.txt Mail-out.txt aes-256-cbc 2048". Then do "pico Mail-decrypt.txt", and "diff Mail-sample.txt Mail-decrypt.txt".  Do "rm Mail-decrypt.txt" and "rm Mail-out.txt" to clear the output files generated.
+
+NOTE1- You can use 1024 bit key also, but for that, you'll have to use point 2) to create 1024-bit keys earlier, and not 2048-bit keys.
+
+NOTE 2- You can use "des-ede3-cbc" in place of "aes-256-cbc" in command.
+
+NOTE 3- You can use "./clear.sh" to clear the keys(say of 2048 bit), and use point 2) to create new keys(say, of 1024 bits).
+
+
+6) For AUIN, the command for encoding should be- "python lab2.py CreateMail AUIN A C Mail-sample.txt Mail-out.txt sha512 2048". Do "pico Mail-out.txt" to see the encoded output file. 
+
+Do decoding of this immediately after this, using, "python lab2.py ReadMail AUIN A C Mail-sample.txt Mail-out.txt sha512 2048". Then do "pico Mail-decrypt.txt", and "diff Mail-sample.txt Mail-decrypt.txt".  Do "rm Mail-decrypt.txt" and "rm Mail-out.txt" to clear the output files generated.
+
+NOTE1- You can use "sha3-512" in place of "sha" in command.
+
+NOTE2- This does not work for key length of 1024 bits. 
+
+NOTE 3- You can use "./clear.sh" to clear the keys, and use point 2) to create new keys.
+
+
+7) For COAI, the command for encoding should be- "python lab2.py CreateMail COAI A C Mail-sample.txt Mail-out.txt sha512 aes-256-cbc 2048". Do "pico Mail-out.txt" to see the encoded output file. 
+
+Do decoding of this immediately after this, using, "python lab2.py ReadMail COAI A C Mail-sample.txt Mail-out.txt sha512 aes-256-cbc 2048". Then do "pico Mail-decrypt.txt", and "diff Mail-sample.txt Mail-decrypt.txt".  Do "rm Mail-decrypt.txt" and "rm Mail-out.txt" to clear the output files generated.
+
+NOTE1- You can use "sha3-512" in place of "sha" in command; and "des-ede3-cbc" in place of "aes-256-cbc" in command.
+
+NOTE2- This does not work for key length of 1024 bits.
+
+NOTE 3- You can use "./clear.sh" to clear the keys, and use point 2) to create new keys.
+
+
+
+SUCCESSES:-
+1) CONF works fully. AUIN works for sha and sha3-512,i.e, work fully, but only for 2048 bit RSA keys. COAI works for (sha,aes-256-cbc),(sha3-512,aes-256-cbc), (sha,des-ede3-cbc) and (sha3-512,des-ede3-cbc), i.e, it works fully, but all this is for 2048 bit key.
+2) Implmeneted interface fully.
+
+FAILURES:-
+1) AUIN and COAI didn't work for 1024 bit RSA keys.
+
+
+"recorded_script" is the linux script file in which I have run CONF,AUIN,COAI and all the command mentioned above using all combinations.

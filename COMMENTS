@@ -1,0 +1,5 @@
+TAUGHT: How encryption, authentication work separately, and together. It taught how openssl can be used to encrypt, decrypt, and create hashes on our system. It was fun to see how I encrypted the message and got it back perfectly after all those manipulations. 
+I hope marks are there for interface also, as I spent quite some time on that.
+As we implemented RSA and hash, I got a hand-on, and I don't think I will ever forget how authentication and encryption works. As Benjamin Franklin says- "Tell me and I forget, teach me and I may remember, involve me and I learn".
+
+SUGGESTIONS FOR CHANGE: I asked a doubt on error I got using 1024 bit key in SHA, but it was unanswered. I think a discussion-forum on moodle should at least have been created.

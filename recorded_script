@@ -1,0 +1,804 @@
+Script started on Thursday 18 March 2021 10:54:50 AM IST
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pi[K[Kpico USE[K[K[KUsernames.txt 
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Usernames.txt is being edited (by sayukta with nano 2.5.3, PID 25931); con [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;32H(B[0;7m[ Read 14 lines[17d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Usernames.txt                                [3;1H(B[mA[4dB[5dC[6dD[7dE[8dF[9dG[10dH[11dI[12dJ[13dK[14dL[15dM[16dN[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[1]+  Stopped                 pico Usernames.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ p[Kpython lab2.py CreateKeys Usernames.txt 2048
+rsa_key_len:  2048
+rsa_key_len_createeeee:  2048
+str(rsa_key_len:  2048
+user:  A
+
+....................+++++
+..................................+++++
+user:  B
+
+......................+++++
+..................+++++
+user:  C
+
+...........................+++++
+.........................................................+++++
+user:  D
+
+..................+++++
+............+++++
+user:  E
+
+...........................................................................................................................................................................................................................+++++
+..+++++
+user:  F
+
+...+++++
+......+++++
+user:  G
+
+.......................................+++++
+................+++++
+user:  H
+
+....+++++
+......................................+++++
+user:  I
+
+.................................................+++++
+.................+++++
+user:  J
+
+...............................................................................+++++
+.+++++
+user:  K
+
+.........................................................................................+++++
+...+++++
+user:  L
+
+............................+++++
+.................................................+++++
+user:  M
+
+..................+++++
+...................+++++
+user:  N
+
+....................................................+++++
+.....+++++
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ ls -l *_priv.txt *_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1708 Mar 18 10:55 A_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 A_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 B_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 B_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 C_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 C_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 D_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 D_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 E_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 E_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 F_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 F_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 G_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 G_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 H_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 H_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 I_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 I_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 J_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 J_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 K_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 K_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1708 Mar 18 10:55 L_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 L_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1704 Mar 18 10:55 M_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 M_2048_pub.txt
+-rw-rw-r-- 1 sayukta sayukta 1708 Mar 18 10:55 N_2048_priv.txt
+-rw-rw-r-- 1 sayukta sayukta  451 Mar 18 10:55 N_2048_pub.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-sample.txt
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-sample.txt                               [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[2]+  Stopped                 pico Mail-sample.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048
+len(data):  32
+len(data2):  16
+openssl enc -aes-256-cbc -in plaintext -K 90762298288829974868849248282123 -iv 3996416814635722 -out session_key_encrypted_message
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(data):  256
+len(data2):  64
+len(data):  320
+len(d1):  256
+len(d2):  64
+len(data):  32
+len(data2):  16
+openssl enc -aes-256-cbc -d -in session_key_encrypted_message_RECV -K 90762298288829974868849248282123 -iv 3996416814635722 -out decrypted_plaintext
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pc[Kico Mail-out.txt 
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b1000010b110001010b110011010b101101100b10001110b111100b101011000b111001000b100$[5;1H0b1110010b1101110b10000110b110010100b100001010b11011100b100001100b110011000b101$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[3]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python [K[K[K[K[K[K[Kpython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-decrypt.txt 
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-decrypt.txt                              [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[4]+  Stopped                 pico Mail-decrypt.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-p[Ksample.txt Mail-decrypt.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-sample.txt Mail-decrypt.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048d 2048e 2048s 2048- 2048e 2048d 2048e 20483 2048- 2048c 2048b 2048c 2048
+len(data):  21
+len(data2):  8
+openssl enc -des-ede3-cbc -in plaintext -K 789439176982319411441 -iv 11709477 -out session_key_encrypted_message
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(data):  256
+len(data2):  56
+len(data):  312
+len(d1):  256
+len(d2):  56
+len(data):  21
+len(data2):  8
+openssl enc -des-ede3-cbc -d -in session_key_encrypted_message_RECV -K 789439176982319411441 -iv 11709477 -out decrypted_plaintext
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 6476); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b110001100b101110110b1100100b101001010b100110010b10111010b100011100b101101100b$[5;1H0b100100100b101011110b111101110b11001110b1001110b111001110b10100000b10000000b11$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[5]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048d 2048e 2048s 2048- 2048e 2048d 2048e 20483 2048- 2048c 2048b 2048c 2048
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[30Pico Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-decrypt.txt is being edited (by sayukta with nano 2.5.3, PID 6496); c [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-decrypt.txt                              [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[6]+  Stopped                 pico Mail-decrypt.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-decrypt.txt ython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-sample.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KMail-out.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-sa[K[Kdecrypt.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ [H[2J(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt [4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Prm Mail-ou[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[K./clear_keys.sh 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateKeys Usernames.txt 2048[C[K[K[K[K1024
+rsa_key_len:  1024
+rsa_key_len_createeeee:  1024
+str(rsa_key_len:  1024
+user:  A
+
+............+++++
+................................+++++
+user:  B
+
+.+++++
+......................................................+++++
+user:  C
+
+......+++++
+................................+++++
+user:  D
+
+...............................+++++
+...................+++++
+user:  E
+
+...................+++++
+..............................+++++
+user:  F
+
+.....................+++++
+...+++++
+user:  G
+
+.....................................................+++++
+...........+++++
+user:  H
+
+..........................................................+++++
+...................+++++
+user:  I
+
+.......+++++
+..+++++
+user:  J
+
+.............+++++
+..............................+++++
+user:  K
+
+..................+++++
+.+++++
+user:  L
+
+...+++++
+....+++++
+user:  M
+
+........................+++++
+.........+++++
+user:  N
+
+.......+++++
+..........................+++++
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateKeys Usernames.txt 1024[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[30Pico Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K1024
+len(data):  32
+len(data2):  16
+openssl enc -aes-256-cbc -in plaintext -K 04872589614338404834358857404296 -iv 8731242856387091 -out session_key_encrypted_message
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(data):  128
+len(data2):  64
+len(data):  192
+len(d1):  128
+len(d2):  64
+len(data):  32
+len(data2):  16
+openssl enc -aes-256-cbc -d -in session_key_encrypted_message_RECV -K 04872589614338404834358857404296 -iv 8731242856387091 -out decrypted_plaintext
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 6540); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b10100000b1101110b101001000b101110110b11100000b111000b101110010b11010b10111000$[5;1H0b111111000b111110000b1110000b11000100b10011100b100101010b1111100b11100000b1011$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[7]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[A[C[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[C[K[K[K[K1024
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 1024[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[A[C[C[30Pico Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-decrypt.txt is being edited (by sayukta with nano 2.5.3, PID 6552); c [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-decrypt.txt                              [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[8]+  Stopped                 pico Mail-decrypt.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-decrypt.txt ython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 1024[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-sample.txt Mail-decrypt.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 1024[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt [18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 1024[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-out.txt [4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 1024[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8PKeys Usernames.txt 1024
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28P./clear_keys.sh [4@rm Mail-decrypt.txt[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 2048[K[K[K[K1024[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048[A[C[32Pico Mail-sample.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l *_priv.txt *_pub.txtpython lab2.py CreateKeys Usernames.txt 2048[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pls -l *_priv.txt *_pub.txt[6Ppico Mail-sample.txtython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048[A[C[32Pico Mail-sample.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l *_priv.txt *_pub.txtpython lab2.py CreateKeys Usernames.txt 2048[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pico Usernames.txt ython lab2.py CreateKeys Usernames.txt 2048[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pls -l *_priv.txt *_pub.txt[6Ppico Mail-sample.txtython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048[A[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt aes-256-cbc 2048[A[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 2048[A[C[C[C[30Pico Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 2048[C[C[C[C[K[K[K[K1024[C
+len(data):  21
+len(data2):  8
+openssl enc -des-ede3-cbc -in plaintext -K 653641657014269850983 -iv 64831512 -out session_key_encrypted_message
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(data):  128
+len(data2):  56
+len(data):  184
+len(d1):  128
+len(d2):  56
+len(data):  21
+len(data2):  8
+openssl enc -des-ede3-cbc -d -in session_key_encrypted_message_RECV -K 653641657014269850983 -iv 64831512 -out decrypted_plaintext
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt aes-256-cbc 1024[A[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 6747); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b11111000b111111110b101001010b11011100b1000110b11000100b110110b100011100b10001$[5;1H0b101110100b110010000b10100b110011100b10001110b11100010b11100100b101000110b1011$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[9]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt Mai[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt Mail[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt Mail-[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt Mail-o[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt Mail-ou[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail CONF A C Mail-sample.txt Mail-out[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CRMail CONF A C Mail-sample.txt Mail-ou[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CeMail CONF A C Mail-sample.txt Mail-o[1@u[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaMail CONF A C Mail-sample.txt Mail-[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CdMail CONF A C Mail-sample.txt Mail[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt python lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024[A[C[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-decrypt.txt is being edited (by sayukta with nano 2.5.3, PID 6758); c [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-decrypt.txt                              [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[10]+  Stopped                 pico Mail-decrypt.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-decrypt.txt ython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024[A[C[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail CONF A C Mail-sample.txt Mai
+l-out.txt des-ede3-cbc 1024[A[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail CONF A C Mail-sample.txt M
+ail-out.txt des-ede3-cbc 1024[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ ./clear_keys.sh 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateKeys Usernames.txt 2048
+rsa_key_len:  2048
+rsa_key_len_createeeee:  2048
+str(rsa_key_len:  2048
+user:  A
+
+.......................+++++
+............+++++
+user:  B
+
+....................................+++++
+....................................................................................+++++
+user:  C
+
+..............+++++
+........+++++
+user:  D
+
+.............................................................................+++++
+......................+++++
+user:  E
+
+.....................................+++++
+.................................................+++++
+user:  F
+
+.........+++++
+....+++++
+user:  G
+
+...+++++
+......................................................................................+++++
+user:  H
+
+...........................+++++
+.......+++++
+user:  I
+
+.........+++++
+........................+++++
+user:  J
+
+.......................................+++++
+.................+++++
+user:  K
+
+..........................+++++
+...................................+++++
+user:  L
+
+..............+++++
+....................................................................................................+++++
+user:  M
+
+..............................................................................................................................................................................+++++
+.......+++++
+user:  N
+
+.........................+++++
+..+++++
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail AUIN A C Mail-sample.txt M
+ail-out.txt sha512 2048
+<class 'bytes'>
+b'SHA512(plaintext)='
+18
+b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+128
+x:  A
+y:  2048
+len(data):  256
+rsa_encrypted_hash:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n="
+len(data2):  52
+plaintext:  b'zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz'
+len(data):  308
+data:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n=zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+len(data):  308
+data:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n=zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+type(data):  <class 'bytes'>
+str(x):  2048
+len(d1):  256
+len(d2):  52
+wrd:  SHA512(plaintext_RECV)=
+wrd:  68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+xxx: zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz
+hash_RECV:  b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+hash_from_rsa:  b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+==========================SUCCESS=================================
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt 
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 6803); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b100011110b110011000b1001010b11010000b1110010b100b111110100b111100100b10101100$[5;1Hzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[11]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail AUIN A C Mail-sample.txt M
+ail-out.txt sha512 2048[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail AUIN A C Mail-sample.txt Mai[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail AUIN A C Mail-sample.txt Mail[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail AUIN A C Mail-sample.txt Mail-[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail AUIN A C Mail-sample.txt Mail-o[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail AUIN A C Mail-sample.txt Mail-ou[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail AUIN A C Mail-sample.txt Mail-out[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CRMail AUIN A C Mail-sample.txt Mail-ou[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CeMail AUIN A C Mail-sample.txt Mail-o[1@u[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaMail AUIN A C Mail-sample.txt Mail-[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CdMail AUIN A C Mail-sample.txt Mail[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Maial[K[Kl-l[Kdecrypt.txt 
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-decrypt.txt is being edited (by sayukta with nano 2.5.3, PID 6825); c [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-decrypt.txt                              [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[12]+  Stopped                 pico Mail-decrypt.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-out.txt Mail-decrypt.txt 
+1,2d0
+< 0b100011110b110011000b1001010b11010000b1110010b100b111110100b111100100b10101100b110000b101011010b101000110b111111110b111111010b111101000b111100000b110010010b101000010b100000b11000000b111011110b1111110b100001100b1100010b111000000b11101000b100011110b111000010b11111010b110110000b1000010b111111110b100010110b10011100b101010b10100110b110111100b100101100b111011110b1110110b10001110b1001100b101100010b110111000b100010010b11111010b11000000b101100b100101110b11010b101110100b100101110b100000b110011010b1001110b101000000b110010100b111011110b11001110b100000110b11011010b110101000b101101110b110010010b111111110b111001110b10101000b111011010b1100100b101110110b101111110b101111010b111010b101101110b111010100b1000000b11010110b110110100b110111000b10010000b11011110b11110000b101011000b100000010b11101010b1101110b1110110b10110000b100101110b11101110b111100100b101100110b101110b111100100b1000b10011010b101111000b100101010b101110010b100101010b1111110b100010b100000100b111010100b1110000b100010000b11010000b100010110b11101000b110100100b111001000b101011110b10010b11101010b110011000b1001110b10000110b10011010b11100010b110110b100100010b10001010b110111010b10100000b11101100b111010000b110111110b11011010b111011110b101000110b10110b1000000b1001110b101101000b111001100b11001000b1101010b11000000b10001010b10110010b101000000b100111010b10100000b1011100b1101110b101110110b101101010b10110110b1000b111000000b11110110b101101000b10110000b11010110b1111000b111000b110110010b1001110b101100b100001000b1010010b11100000b11101100b101010100b101101010b100101010b100011110b100101110b111001110b101110000b11100110b111100010b1101000b110110100b111010000b10111100b10100010b10100110b110011110b1000110b100101000b11110000b1100010b111110110b00b11111010b110100b11011100b110100b100001010b10001100b110111110b10010010b100000100b110101100b10000000b101000010b110111010b100011110b1001000b1000110b111111000b111010000b101111100b110101000b10011100b110000b10100b11100000b111011010b100000000b11000100b111011000b100101100b100011110b110101100b110010010b10111100b111001100b11010010b110010100b100100000b111110000b110010100b10110010b1111000b100101100b100010100b1100000b110000b1110010b110b10111100b11101100b101111110b110001010b10000010b10110b110110100b111101110b100000100b101111010b100010110b1011110b100011000b10110100b10011110b10010100b101010100b111101110b110010b110001010b110001110b100011110b10100b111101
+< 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-out.txt Mail-decrypt.txt [C[1P[1P[1P[1@s[1@a[1@m[7@ple.txt
+diff: Mail-sample.txt.txt: No such file or directory
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-sample.txt.txt Mail-decrypt.txt [1P[1P[1P[1P
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ [H[2J(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm MAI[K[K[KMail-out.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt [4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[4@.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pou[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail AUIN A C Mail-sample.txt Mai
+l-out.txt sha512 2048[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail AUIN A C Mail-sample.txt M
+ail-out.txt sha512 2048[1@3[1@-
+a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+x:  A
+y:  2048
+len(data):  256
+rsa_encrypted_hash:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xed"
+len(data2):  52
+plaintext:  b'zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz'
+len(data):  308
+data:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xedzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+len(data):  308
+data:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xedzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+type(data):  <class 'bytes'>
+str(x):  2048
+len(d1):  256
+len(d2):  52
+wrd:  SHA3-512(plaintext_RECV)=
+wrd:  a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+xxx: zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz
+hash_RECV:  b'a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920'
+hash_from_rsa:  b'a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920'
+==========================SUCCESS=================================
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail AUIN A C Mail-sample.txt M
+ail-out.txt sha3-512 2048[A[C[C[C[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Prm Mail-ou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[4@.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pou[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail AUIN A C Mail-sample.txt Mai
+l-out.txt sha512 2048[A[C[C[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 7164); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b101101110b10100b1100010b111110000b1010010b101010000b100111000b10111110b111100$[5;1Hzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[13]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail AUIN A C Mail-sample.txt M
+ail-out.txt sha3-512 2048[A[C[C[C[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[4@.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pou[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail AUIN A C Mail-sample.txt Mai
+l-out.txt sha512 2048[1@3[1@-
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-decrypt.txt 
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-decrypt.txt is being edited (by sayukta with nano 2.5.3, PID 7184); c [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3            File: Mail-decrypt.txt                              [3;1H(B[mzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[14]+  Stopped                 pico Mail-decrypt.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-decrypt.txt ython lab2.py ReadMail AUIN A C Mail-sample.txt Mai
+l-out.txt sha3-512 2048[A[C[C[C[C[C[C[30Pico Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd[Kpico Mail-decrypt.txt ython lab2.py ReadMail AUIN A C Mail-sample.txt Mai
+l-out.txt sha3-512 2048[A[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail AUIN A C Mail-sample.txt M
+ail-out.txt sha3-512 2048[A[C[C[C[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[4@.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ [H[2J(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Heyyy
+68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+len(data):  256
+rsa_encrypted_hash:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n="
+len(data2):  52
+plaintext:  b'zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz'
+len(data):  308
+data:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n=zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+len(data):  32
+len(data2):  16
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_session_key):  256
+len(session_key_encrypted_merged_enc_hash_and_message):  320
+len(data):  576
+len(rsa_encrypted_session_key_RECV):  256
+len(session_key_encrypted_merged_enc_hash_and_message_RECV):  320
+len(data):  32
+len(data2):  16
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_hash_RECV):  256
+len(plaintext_RECV):  52
+wrd:  SHA512(plaintext_RECV)=
+wrd:  68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+xxx: b'\x98\x8f\x14\x05\xacx_\x9ehy8\x19yx\xc4N\xbd!\x7f\x9b+;\\^\xd5\xae\xb1\xc3\x86/\xa2\xe08\x18A\x00\xee\xd0\xe7S\x0b\x18\x0e\x9f\xa4v\xd2\xac\xb1n\x0f\xa5^&#\x12g\x06\xbb\xba]B\x83\xe4\xc2j\xcd\xb4s$\x98!>\x8aS\xbf\xd3*\xfb\x13.\xc47<\x9dJ0\x9b\x8d\xa2\xc2\xbe+\xd3\xed\xac\x82\x03o\xf5\xb5\xb7;v\xb1\xa3\x15\xd8\xfd\xc9\xf9\xce\x8f:]Hy\x8c\x93\xe1s\xf9\xea\x0e\xf9\x9d\x1b\xe1GL\xc3\xb7\x9d\xf2\xdbf\xc6,ZM\xb2\x00\x14EZ\xd0\x7f\xd2\x8f]\xf2y\xd8\xf6V\x95\xdc\xd9z\xb1\xc9}\xc6\x17+W\xae\xd9\xe9~\x9aP\x85\xaf\x17\xdf\xeaG\xd5e\\\xcf2P\xee\xec^\x9f\\b\x08\x8aD\xb7\xe4C\xe0\xc5\x8f\xd08\x06\x03Yf\x87%\xe5\xf6\x0eK\xd4\x10\xbf\x1b\x15\x1f\x82O\x1aY\x08\xf4%w\xd5M\xe3\x81|\xbeD\xb8F%X\xc4\xd0\x9d=\xfa\x11\xea\xe9\xee\xd5}C_\t\x93\xd3<K\x94\x90\xa8\xf6\xd3\x96\xd4\xdfU\xc7\xe2L\x90\x97\x93@\xf1\xe94s\n\x17\xfc\xbe\x8fn\xdd\xcd\xbfy\x8a\xc2\x05\xd1`\xed$\xb1PM+K\xfd\xe1w\xda\xe1\xe6-\x854\xcf/\xbd\xdcDd+RS\xa9w\xcb\x85\xd4\xad'
+hash_RECV:  b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+hash_from_rsa:  b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+==========================SUCCESS=================================
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail AUIN A C Mail-sample.txt Mai
+l-out.txt sha3-512 2048[A[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 7238); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b10001100b111111000b101001010b11110010b10010010b1101000b10011110b111001000b111$[5;1H0b100110000b100011110b101000b1010b101011000b11110000b10111110b100111100b1101000$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[15]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mai[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-o[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-ou[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-out[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CRMail COAI A C Mail-sample.txt Mail-ou[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CeMail COAI A C Mail-sample.txt Mail-o[1@u[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaMail COAI A C Mail-sample.txt Mail-[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CdMail COAI A C Mail-sample.txt Mail[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Ppico[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm MAI[K[Kail-sample.txt [K[K[K[K[K[K[K[K[K[K[Kout.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt [4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[1@3[1@-
+a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+len(data):  256
+rsa_encrypted_hash:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xed"
+len(data2):  52
+plaintext:  b'zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz'
+len(data):  308
+data:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xedzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+len(data):  32
+len(data2):  16
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_session_key):  256
+len(session_key_encrypted_merged_enc_hash_and_message):  320
+len(data):  576
+len(rsa_encrypted_session_key_RECV):  256
+len(session_key_encrypted_merged_enc_hash_and_message_RECV):  320
+len(data):  32
+len(data2):  16
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_hash_RECV):  256
+len(plaintext_RECV):  52
+wrd:  SHA3-512(plaintext_RECV)=
+wrd:  a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+xxx: b"\x99/\x94YJ^\x02)\xe6\xc6\xf2\xdd\x13\xd8\xe11Pb\xbd\xb3\x98\xa4\x1c\xf1\x0e\xd0\x83k@\x8a6T\x05\xa1\xf8\xa5\xd1\x9c\xe4\x00w,c\xc1\x91\x1d\xe5\xc3\x90s\xe6K\xe5\r\x00'`A\xc8\xa6\xb8!\xf9\x81\xf1eSmA\x9a3\xc1>\xb4\xcd9,\xdf\x12\x87\xe4#\xc7\x99\xcd\xd8\xd8\x86\x95\xdcRD!\xb8\x07\xa7\x83\xcdx\xb2\xc3\xad}\xde\xc0\x923\xc0m!\x8c=\xd5\xa3\x00\xbc\x1dq\xa7\x8cdb\xe6\xb2\x9b\x0f5\x8b4(G\xc0\x83:\x98\x00\xda\xf5u\x8e\xe8\x90F]s\xbbW\xaf\xa0\xc7\xadK\xea?\xf2\x05B\xf1\xd0\xdb\xe9\x15\xd9/a\xe5\xfc\xfay\x96\xae<\xf7\xe5-c\x9d+\x0cL\xe7\xd8\xf9\xb3\xd7\x91\xa5\xa8w\x8aBv\x8dEB2?Q\xe3C\x99\xd4_@\xc9=\xd4|L\x9f\xa1\xdc\xd0\x1f\xa5\x88\xfeD\x97\xa9\\\xf0<\xbb\x14\xa7\xda7\xbf\x0cz\x16j!\xc9\x8fQr\xff\x1dB\xc1\xf7\xa0}\xbbM\xdcd\x19\x9b\x13\xe1Kv\t\xb5\xe4\x97c\x98\xfe\xa1\x1b\x1f\xf22\xc9\x8eki\xf9\xfc4'\x90\xe7\x9c\xd6\x82fa\x1dS\xcb\xaaC\xd9\x85d\x1c\x8d\xff\x94\x18+\x98\x99\x14\xcf\x87?\x96\n\xa0\xfcT\xe9\xac\x9e\x8f\xca\t\t\x1a\xdbd\x9c\x0c\xc0"
+hash_RECV:  b'a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920'
+hash_from_rsa:  b'a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920'
+==========================SUCCESS=================================
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 aes-256-cbc 2048[A[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 aes-256-cbc 2048[A[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 aes-256-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 7302); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b110101100b11110000b101110010b11101010b111100010b111101110b10010100b111100010b$[5;1H0b100110010b1011110b100101000b10110010b10010100b10111100b100b1010010b111001100b$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[16]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 aes-256-cbc 2048[A[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[1@3[1@-
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512 aes-256-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 aes-256-cbc 2048[A[32Prm Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pou[C[C[C[C[C[C[22@diff Mail-sample.txt Mail-decryp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 aes-256-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ diff Mail-sample.txt Mail-decrypt.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512 aes-256-cbc 2048[C[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[A[C[C[C[C[C[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 aes-256-cbc 2048[C[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048[1P 2048d 2048e 2048s 2048- 2048e 2048d 2048e 20483 2048- 2048c 2048b 2048c 2048[C[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+len(data):  256
+rsa_encrypted_hash:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n="
+len(data2):  52
+plaintext:  b'zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz'
+len(data):  308
+data:  b"\x8f\xcc%h9\x02\xfa\xf2V\x18\xad\xa3\xff\xfd\xf4\xf0\xc9\xa1\x10`\xef?\x861\xe0t\x8f\xe1}\xd8!\xff\x8bN\x15S\xde\x96\xef;G&\xb1\xdc\x89}`\x16\x97\r\xba\x97\x10\xcd'\xa0\xca\xefg\x83m\xd4\xb7\xc9\xff\xe7T\xed2\xbb\xbf\xbd\x1d\xb7\xea k\xda\xdcHox\xac\x81u7;X\x97w\xf2\xb3\x17\xf2\x04M\xbc\x95\xb9\x95?\x11\x82\xea8\x88h\x8bt\xd2\xe4\xaf\tu\xcc'CMq\x1b\x91E\xddPv\xe8\xdfm\xef\xa3\x0b '\xb4\xe6d5`EY\xa0\x9dP.7\xbb\xb5[\x04\xe0{\xb4Xk<\x1c\xd9'\x16\x84)pv\xaa\xb5\x95\x8f\x97\xe7\xb8s\xf14\xda\xe8^QS\xcf#\x94x1\xfb\x00}\x1an\x1a\x85F\xdfI\x82\xd6@\xa1\xdd\x8f$#\xfc\xe8\xbe\xd4N\x18\np\xed\x80b\xec\x96\x8f\xd6\xc9^\xe6i\xca\x90\xf8\xcaY<\x96\x8a0\x189\x03^v\xbf\xc5A\x0b\xda\xf7\x82\xbd\x8b/\x8cZOJ\xaa\xf7\x19\xc5\xc7\x8f\n=zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+len(data):  21
+len(data2):  8
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_session_key):  256
+len(session_key_encrypted_merged_enc_hash_and_message):  312
+len(data):  568
+len(rsa_encrypted_session_key_RECV):  256
+len(session_key_encrypted_merged_enc_hash_and_message_RECV):  312
+len(data):  21
+len(data2):  8
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_hash_RECV):  256
+len(plaintext_RECV):  52
+wrd:  SHA512(plaintext_RECV)=
+wrd:  68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b
+xxx: b')\x86KA\xdb\x1c\xf6\x96\x7f^\xa8\x9fR\\H\x17H\xb2\xd4\xde%\x9b\x01\xd2\xcd\x8d)\xf9+\xd79\xd4\xd9\xb1.\xe5]\xf2\xd6\x16G\x1f\xff!$v\xd2J|0\xed\xd2\x13\xce\xe76c\x8e\x12\x1a\xee\xa5\xa7\x82W\x81C\xe84<\xd8\x17\xfd\xc7\xd1\x96\xd4\xaaH\xc4\x10\x1a3\xb6f \xf3\x9884\xdf\x87\xb0MtW\xed\xcbn\xa8\xcb\x08\xf5\x1f\xe7\x16\xac>q\x0e)\xac\xc3+j\n\xfd\xdc-B\xcbL\x8f\xfa|\x90\xfe\xb8\xb7\x82\xa4\xf9:\xe1n<_`&sH\x18jB\x1b\xfa\x1d\xa7\xce\xbf\xf2\xf4\xa3>\xeaO\xbbc\xf1\xc0w\xa9\x0f\xdb]\x06_\x0f\xbf\xfc\x94\xd7\x0f\xac\x0b\xc5\xe5*G\xe2\x9a\xedWL\xe8\xa7:p\xbf\xc4\xcb\xd5\x8f\xce\xe5\xb94A\x91S\x9d\xb2\xe1\x7f\x017\xe6\x98\x86f\x0f\xf08\xdd\xd3?\xb8J\xdf7h\\P\xc3A\xdfH+~\xc4g\xf6\xe6wD\xdc\xc9n\xd8\xc4\xc5\x80z\xa2\xb4e%-g\xf1!/\xdbF\xb3\xc9G\x1f\xd5\x0e\xc1\x08\xfcP\x8d6\x95\xcf^:\x91\x07\xb4S\x07\xfeA\xa9\xf3<1)\xe88\xf7\xea\xf5+\x95Lb\xbd\xca`2\x1b\x14\x17X\n\x02\xac\x98\x9aiQA\x07\x81\xc7b2'
+hash_RECV:  b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+hash_from_rsa:  b'68053977c78c72fdf8731595548316c2524d394c4ef34829c2b86733d30a63002f0487503b8e4fff307dd467a1f08e5864fd7504f7a9c0b635c650a7865cc02b'
+==========================SUCCESS=================================
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 des-ede3-cbc 2048[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512  2048[A[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512  2048[A[C[C[C[C[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512  2048[A[C[C[C[C[C[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 7373); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b11110100b10110110b1110010b100000010b1100100b111010b110101110b101011000b100000$[5;1H0b1010010b100001100b10010110b10000010b110110110b111000b111101100b100101100b1111$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[17]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 des-ede3-cbc 2048[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mai[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-o[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-ou[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMail COAI A C Mail-sample.txt Mail-out[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CRMail COAI A C Mail-sample.txt Mail-ou[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CeMail COAI A C Mail-sample.txt Mail-o[1@u[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaMail COAI A C Mail-sample.txt Mail-[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CdMail COAI A C Mail-sample.txt Mail[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 des-ede3-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 des-ede3-cbc 2048[A[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512  2048[A[C[C[C[C[14Pdiff Mail-sample.txt Mail-decrypt.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-decrypt.txt [K[K[K[K[K[K[K[K[K[K[K[Kout.txt 
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ rm Mail-out.txt [4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 des-ede3-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha512 des-ede3-cbc 2048[1@3[1@-
+a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+len(data):  256
+rsa_encrypted_hash:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xed"
+len(data2):  52
+plaintext:  b'zoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz'
+len(data):  308
+data:  b"\xb7\n1\xf8)\xa8\x9c_\xf3\xefR\xa7-\xe1\xa8\x88\xa9?\x9er\xef\x83\xe1N\x99\xb3n\x9cGI-/\x88\xe4\xa5\x82a3\xc8.\x18m@!\xee\xa4\xe6\xac\xbe\xd7\x8c\\\xc1\x1b\xbc\xe3\xd1\x96\x1c\x9f\x1f\x9e!%6\xd4\xd0a5\r\xdb\xc0\xd2{|\xd3D\xf7\xb1\x9azj\xe5\xc8s\x9b\xb3V\x83n\xacsl\xa96\xf6\x15i\x88d\x96\x06\x80\x9cg\xe8\xc4D\xc2[\xe1\xad4\xeb@\x81\x1a\xfc6\xc7PQ\xbb \x85\xa6\xd6If?\xaa\x1b\xd1\xeeX\n\xe0r\x8a4\xf9\x17\xa6\x9a\xe6\x9f\x97T\xba\xd6\x19\x05\x1c\x88\xa1\x18\xba\xd6\xdf^g\xe8\xdb\x86)\xdc\xd1\xa6\x0eH\xe5\xa8\x00;\x1d\xf5\x06\x15\xaf\x93\xa1\xa9r\x8c\x94]\xb6O}\xc6\xb3I\xfc\xe3\xe0\xab\x15\x89\xaf\xdd\x82\xd9R\xdePd&z&\x89\xa4\xc3\xa0\xb3\xb5W\xcd\xcd\xc4\x85'C\xae\xc6\x08\xc8r\xad\xe7\x12\x83U\xc7P\x85\xb3\x03\xccX\x179\r\xb6\x9ee\xb3;(\xd3\xa0\xb1\xc7\xd7M\x81\xedzoxtbgvcmoqmwomlpwrcsqjtbuqrfxmgolbrrztgnjsjxfwobzzz"
+len(data):  21
+len(data2):  8
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_session_key):  256
+len(session_key_encrypted_merged_enc_hash_and_message):  312
+len(data):  568
+len(rsa_encrypted_session_key_RECV):  256
+len(session_key_encrypted_merged_enc_hash_and_message_RECV):  312
+len(data):  21
+len(data2):  8
+hex string is too short, padding with zero bytes to length
+hex string is too short, padding with zero bytes to length
+len(rsa_encrypted_hash_RECV):  256
+len(plaintext_RECV):  52
+wrd:  SHA3-512(plaintext_RECV)=
+wrd:  a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920
+xxx: b'\x0f\x9d\xf1\xea\xd1\x7f\x9b\x82A\xa3\xf4X\x98\xa5\x12\xf6\x1c}M"\xff\x85z/\xbfK\xcb\xc1{\x9b\\\n\xbfW\xaft[\x1f \xa1b\xc9\xa1\xef\x84\xbaz\\$\xf7\xb2\x87\xdc\xafd\x8c\x00\xeb\xf6\xa1\xda\x86\x1ey\x1c\x95\xfaU\xfc^K\xfcF\xcf\x0bM\xe8\xf3\x85\xc1\xa3`\xd80\x97p=`1\xa3x\xf5\x12\x17\x1c\xcc\xad\xd3\xc0\xbc<\xcb\xa4\xc1pg\x1d\xac_\xaa\xadi\xe2i\x91s\x1a(\xfe%\x10$fQ\xfa\xe6\xfc\xc9\xc6\xc9\xa9\xdb7\x9b\x16G\xe7\x82\xa6\xf9\xb3\x0fa\x16\x8c\xb7\x10(\x9c\x13\xcdu\xa7|\xe5\x81\x99E\x81m%\x90\xe9\xfe\xfa\x1b\'\xea\xa9\xb0\xa3*R\xb4\xbe\x14\x17\xa3,\x18y\x18N\xcc4\xf9\x1a[<\xd7\xe9\\0$~8\xc2\x05\xcbI51M+\xc5J\x94 \xf5P;\xe8\x1d\x85\x16\x89\x154&)\x06\xa9\xdf\x9c\xf5{\x17\x10\xd8\x88\xc7`\x8e\x93\xe3\x1e\xc3\x8d\xccN\xe9R\x079\x0bexC\xd9\xf2\x1d\x97\xd1[\x9d\xe2\xfe\xcb l\x14`\xf7\xd3GnX`ew\xb4\x0e\xae\x82\xeeK\xfej\x96,\xb8\x82X\xe7\x02\xad\xaf\xf9\xb4a\x1c\xec\x91\x02klm<\xc9\xfb\x8c<1\x85;n-\xa1?\xce\xa8k'
+hash_RECV:  b'a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920'
+hash_from_rsa:  b'a9c434577963ed0018b7b43d4f1f0c19655dd5fb92846c24c76855d9e2a648bbd69e599f753d3cc7983a6ce0a347155b79f34db711847240629eaa0428964920'
+==========================SUCCESS=================================
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 des-ede3-cbc 2048[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpico[K[K[K[Kpython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 des-ede3-cbc 2048[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 des-ede3-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[22d(B[0;7mFile Mail-out.txt is being edited (by sayukta with nano 2.5.3, PID 7515); conti [23;1H Y(B[m Yes[24d(B[0;7m N(B[m No[24;17H(B[0;7m^C(B[m Cancel[22;80H[?25l[22;32H[1K (B[0;7m[ Reading File ](B[m[K[3d[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3             File: Mail-out.txt                                 [3;1H(B[m0b100100b111000000b110101110b11001010b1001000b10010b111110100b100100100b1001010$[5;1H0b11110b100111010b111100010b111010100b110100010b11111110b100110110b100000100b10$[23;1H(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[24;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[18]+  Stopped                 pico Mail-out.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ pico Mail-out.txt ython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 des-ede3-cbc 2048[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha512 des-ede3-cbc 2048[C[1@3[1@-
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ python lab2.py ReadMail COAI A C Mail-sample.txt Mai
+l-out.txt sha3-512 des-ede3-cbc 2048[A[34Pico Mail-out.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cython lab2.py CreateMail COAI A C Mail-sample.txt M
+ail-out.txt sha3-512 des-ede3-cbc 2048[Arm Mail-out.txt [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@decryp[C[C[C[C[C[C[18@diff Mail-sample.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ exit
+exit
+There are stopped jobs.
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/LAB2[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/LAB2[00m$ exit
+exit
+[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+Received SIGHUP or SIGTERM
+
+Script done on Thursday 18 March 2021 11:12:52 AM IST
